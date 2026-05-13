@@ -1,0 +1,118 @@
+------------------------------ /members (post)-------------------------
+
+{
+    "first_name": "Israeli",
+    "last_name": "Israeli",
+    "email": "israel_new1@test.com", 
+    "phone": "0501234567",
+    "membership_type": "Standard",
+    "join_date": "2026-01-15",
+    "hashed_password": "JustToPassValidation123!" ,
+    "height": 88,
+    "weight": 80
+}
+
+---------------------------/members update (put) json---------------------------------------------
+{
+    "phone": "052-9999999",
+    "weight": 82.5
+}
+---------------------------/members/1/subscriptions (post)---------------------------------
+{
+    "plan_id": 1,
+    "start_date": "2026-01-15",
+    "end_date": "2026-02-15",
+    "price_paid": 250.0,
+    "status": "ACTIVE",
+    "type": "Monthly",
+    "entries_remaining": null
+}
+
+----------------------------- /classes (post) -------------------
+
+{
+  "title": "Pilates Reformer",
+  "description": "Intense core workout using the reformer machine.",
+  "start_time": "2026-01-20T10:00:00",
+  "end_time": "2026-01-20T11:00:00",
+  "capacity": 12,
+  "trainer_id": null,
+  "status": "SCHEDULED",
+  "id" : 1
+  
+}
+
+-------------------------------/classes/1/enroll (post)-----------------------
+{
+  "title": "Pilates Reformer",
+  "description": "Intense core workout using the reformer machine.",
+  "start_time": "2026-01-20T10:00:00",
+  "end_time": "2026-01-20T11:00:00",
+  "capacity": 12,
+  "trainer_id": null,
+  "status": "SCHEDULED",
+  "id" : 1,
+  "member_id": 1
+  
+  
+}
+---------------------------------/classes/1/cancel (post)--------------------------------
+{
+  "title": "Pilates Reformer",
+  "description": "Intense core workout using the reformer machine.",
+  "start_time": "2026-01-20T10:00:00",
+  "end_time": "2026-01-20T11:00:00",
+  "capacity": 12,
+  "trainer_id": null,
+  "status": "SCHEDULED",
+  "id" : 1,
+  "member_id": 1
+  
+  
+}
+---------------------------------------/classes/1/participants (get)-----------------------------------
+{
+  "title": "Pilates Reformer",
+  "description": "Intense core workout using the reformer machine.",
+  "start_time": "2026-01-20T10:00:00",
+  "end_time": "2026-01-20T11:00:00",
+  "capacity": 12,
+  "trainer_id": null,
+  "status": "SCHEDULED",
+  "id" : 1,
+  "member_id": 1
+  
+  
+}
+
+------------------------------/members/1/workout-plans (post)------------------------
+{
+    "trainer_id": null, 
+    "goal": "Hypertrophy Phase 1",
+    "start_date": "2026-01-20",
+    "end_date": "2026-04-20",
+    "notes": "Let's go!",
+    "status": "ACTIVE"
+}
+
+--------------------------/members/1/workout-plans/active (get)-------------------------
+
+{
+    "trainer_id": null, 
+    "goal": "Hypertrophy Phase 1",
+    "start_date": "2026-01-20",
+    "end_date": "2026-04-20",
+    "notes": "Let's go!",
+    "status": "ACTIVE"
+}
+------------------------/members/1/checkin (post)----------------------
+
+{
+    "trainer_id": null, 
+    "goal": "Hypertrophy Phase 1",
+    "start_date": "2026-01-20",
+    "end_date": "2026-04-20",
+    "notes": "Let's go!",
+    "status": "ACTIVE"
+}
+
